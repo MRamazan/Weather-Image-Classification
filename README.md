@@ -1,12 +1,12 @@
-# weather image classification
+# Weather Image Classification
 
-classifying weather conditions from photos using efficientnet-b0 and grad-cam visualization.
+Classifying weather conditions from photos using efficientnet-b0 and grad-cam visualization.
 
 **dataset:** [multi-class weather dataset](https://www.kaggle.com/datasets/pratik2901/multiclass-weather-dataset) — 1125 images across 4 classes (cloudy, rain, shine, sunrise)
 
 ---
 
-## results
+## Results
 
 | metric | value |
 |--------|-------|
@@ -48,7 +48,7 @@ this approach converges faster and avoids destroying pretrained features early o
 ## Grad-CAM
 ![gradcam](gradcam.png)
 
-grad-cam lets us see which regions of the image actually drive the model's prediction. two examples worth highlighting:
+Grad-CAM lets us see which regions of the image actually drive the model's prediction. two examples worth highlighting:
 
 **sunrise** — the model locks onto the bright horizon glow and warm color gradient near the sun. it's not just detecting orange pixels; it focuses specifically on the light diffusion pattern at the edge of the sky, which is what separates sunrise from shine.
 
