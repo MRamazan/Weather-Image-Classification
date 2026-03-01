@@ -46,6 +46,7 @@ this approach converges faster and avoids destroying pretrained features early o
 ---
 
 ## Grad-CAM
+![gradcam](gradcam.png)
 
 grad-cam lets us see which regions of the image actually drive the model's prediction. two examples worth highlighting:
 
@@ -55,5 +56,9 @@ grad-cam lets us see which regions of the image actually drive the model's predi
 
 this tells us the model learned genuinely meaningful visual features rather than shortcut patterns or background noise.
 
+
+![training curves](training_curves.png)
+
+![confusion matrix](confusion_matrix.png)
 
 
