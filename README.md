@@ -25,7 +25,7 @@ classifying weather conditions from photos using efficientnet-b0 and grad-cam vi
 
 ---
 
-## how it works
+## How it works
 
 two-phase transfer learning:
 
@@ -36,7 +36,7 @@ this approach converges faster and avoids destroying pretrained features early o
 
 ---
 
-## data pipeline
+## Data Pipeline
 
 - checked all 1125 images for corruption with `PIL.Image.verify()` — 0 bad files found
 - 80/20 train/val split
@@ -45,7 +45,7 @@ this approach converges faster and avoids destroying pretrained features early o
 
 ---
 
-## grad-cam
+## Grad-CAM
 
 grad-cam lets us see which regions of the image actually drive the model's prediction. two examples worth highlighting:
 
@@ -55,22 +55,5 @@ grad-cam lets us see which regions of the image actually drive the model's predi
 
 this tells us the model learned genuinely meaningful visual features rather than shortcut patterns or background noise.
 
----
 
-## project structure
 
-```
-├── notebook.ipynb
-├── model.pth
-├── class_distribution.png
-├── samples.png
-├── training_curves.png
-├── confusion_matrix.png
-└── gradcam.png
-```
-
----
-
-## stack
-
-`pytorch` · `torchvision` · `efficientnet-b0` · `grad-cam` · `opencv` · `matplotlib` · `seaborn` · `scikit-learn`
